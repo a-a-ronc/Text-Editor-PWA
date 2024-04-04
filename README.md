@@ -17,7 +17,7 @@ and more
 * npm run start
 
 ## Usage
-When this application is used, it saves the data to the database and creates a cache so that the data is persistent.
+When this application is used, it saves the data to the database and creates a cache so that the data is persistent. Video tutorial is located in the assets folder.
 
 ## Future 
 I tried to launch using render but it looks there was an error. The functionality is there but I need to finish the rest of my assignments before the deadline so I am going to move on to the next project. I will go back to it later. 
