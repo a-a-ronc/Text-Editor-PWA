@@ -17,9 +17,9 @@ export const putDb = async (content) => {
   console.log('Put to the database');
   const jateDb = await openDB('jate', 1);
   //await is used here because we are waiting on a promise
-  const tx = jateDb.transaction(['jate'], 'readwrite');
+  const tx = jateDb.transaction('jate', 'readwrite');
   const jateObjStore = tx.objectStore('jate');
-  const request = jateObjStore.add(content);
+  const request = jateObjStore.put({id: 1 , value: content});
 
   const result = await request;
   console.log('Data has been added to the database', result);
